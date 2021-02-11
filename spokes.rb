@@ -11,6 +11,8 @@ class Spokes < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     bin.install "usr/bin/spokes"
+    share.install "usr/share"
+    etc.install "etc/spokes"
     var.install "var/lib"
   end
 
