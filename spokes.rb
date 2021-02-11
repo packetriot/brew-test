@@ -11,12 +11,16 @@ class Spokes < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     bin.install "usr/bin/spokes"
-    share.install "usr/share/spokes"
-    etc.install "etc/spokes"
-    var.install "var"
+    system "install.sh", "#{prefix}"
   end
+
+  def uninstall
+    system "uninstall.sh", "#{prefix}"
+  end 
 
   test do
     system "false"
   end
 end
+
+
