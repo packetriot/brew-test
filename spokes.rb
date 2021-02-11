@@ -10,7 +10,7 @@ class Spokes < Formula
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
-    var.install "var"
+    bin.install "usr/bin/spokes"
 
   end
 
