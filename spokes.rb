@@ -5,6 +5,8 @@ class Spokes < Formula
   sha256 "1fc44c799e1fe11fb923a2d6773b82c3401b4c9d122000686cc75f08c65dcd41"
   license ""
 
+  bottle :unneeded
+
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
